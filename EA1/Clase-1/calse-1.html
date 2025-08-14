@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 Explorando HTML</title>
+</head>
+<body>
+    <h1>Explorando HTML</h1>
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo del Subtitulo</h3>
+    <h4>Subtitulo del Subtitulo.....</h4>
+    <h5>Subtitulo del Subtitulo......</h5>
+    <h6>Subtitulo del Subtitulo......</h6>
+
+
+    <!--Comentario de HTML-->
+    <p>Lorem ipsum dolor sit amet 
+        <u>texto sub</u>
+        consectetur adipisicing elit. Debitis error <strong>Texto en negrita</strong> labore ratione vitae dolores nisi <mark>Texto resaltado</mark> <del>Texto tachado</del> <em>Texto cursiva</em> quam rem blanditiis, velit adipisci quasi? Nemo sed, minima in dolore ut incidunt tempora neque?
+        89458<sub>5</sub> <br>
+        2434<sup>34</sup>
+    
+    </p>
+
+    <h2>Listas y Tablas</h2>
+    <h3>Listas Ordenadas</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Tablas</h3>
+    <table border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Mouse Logi</td>
+            <td>$ 6.000</td>
+        </tr>
+
+    </table>
+
+    <h2>Enlaces e Imágenes</h2>
+
+    <a href="https://www.duoc.cl/">Enlace a DUOC</a>
+
+    <img src="patricio.png" alt="Patricio Estrella contento con los brazos extendidos">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Squidward_Tentacles.svg/100px-Squidward_Tentacles.svg.png" alt="Imagen de calamardo">
+
+
+    <h2>Elementos en bloque (block) y en línea (inline)</h2>
+
+    <div style="background-color: tomato;">
+        Este es un div (Bloque)
+    </div>
+    <p style="background-color: cadetblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, laboriosam minus pariatur eos fuga magni cumque nobis consectetur tenetur quae quis aperiam laudantium, eveniet reiciendis quia repellat quasi ipsa consequatur!</p>
+
+    <h3 style="background-color: gold;">elemento en bloque</h3>
+    <h3 style="background-color: gold;">elemento en bloque</h3>
+
+    <span style="background-color: blueviolet;">Elemento en línea</span>
+
+ <span style="background-color: blueviolet;">Elemento en línea</span>
+  <span style="background-color: blueviolet;">Elemento en línea</span>
+
+<h2>etiquetas semánticas</h2>
+
+<main>
+    <p>Contenido principal</p>
+
+    <article>
+        <h3>Título del articulo</h3>
+        <p>Descripci+on del articulo</p>
+    </article>
+     <article>
+        <h3>Título del articulo</h3>
+        <p>Descripción del articulo</p>
+    </article>
+</main>
+
+<section style="background-color: blue;">
+    Sección 2
+</section>
+
+<section style="background-color:darkturquoise">
+    Sección 3
+</section>
+
+<footer>
+    <p>&copy; Todos los derechos reservados a mí</p>
+</footer>
+
+<form action="" method="">
+    <div>
+         <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre">
+    </div>
+    <br>
+
+    <div>
+        <label for="pass">Contraseña:</label>
+    <input type="password">
+    </div>
+
+    <br>
+     <div>
+        <label for="check">Selecciona una opción</label>
+    <input type="checkbox">
+    </div>
+
+    <br>
+     <div>
+        <label for="radio">Selecciona una opción</label>
+    <input type="radio">
+    </div>
+
+      <br>
+     <div>
+        <label for="color">Selecciona un color</label>
+    <input type="color">
+    </div>
+
+     <br>
+     <div>
+        <label for="fecha">Selecciona una fecha</label>
+    <input type="date">
+    </div>
+
+      <br>
+     <div>
+        <label for="fecha">Agrega tu email</label>
+    <input type="email">
+    </div>
+
+     <br>
+     <div>
+        <label for="file">Agrega tu archivo</label>
+    <input type="file">
+    </div>
+
+     <br>
+     <div>
+        <label for="number">Agrega tu teléfono</label>
+    <input type="number">
+    </div>
+
+     <br>
+     <div>
+        <label for="range">Agrega tu rango</label>
+    <input type="range" min="10.000" max="20.000">
+    </div>
+
+     <br>
+     <div>
+        <label for="fecha">Agrega tu horacio</label>
+    <input type="time">
+    </div>
+
+    <h2>Etiqueta multimedia</h2>
+    <video controls width="200" src="gato.mp4"></video>
+
+    <audio controls src="gato.mp4"></audio>
+
+   
+
+
+
+
+
+   
+
+    
+</form>
+
+ <button popovertarget="info">Mostrar PopOver</button>
+    <div id="info" popover>
+        <p>Este es un PopOver, no me cierres</p>
+        <button popovertarget="info">Cerrar</button>
+    </div>
+
+
+
+</body>
+</html>
