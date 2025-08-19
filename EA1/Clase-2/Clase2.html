@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon-google.png" type="image/x-icon">
-    <title>Clase 2</title>
+    <title>Clase-2-HTML</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://www.duoc.cl/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <h1>HTML clase 2</h1>
 
-    <h1>Clase 2 - Favicon - Inline Block - Canvas</h1>
+    <h2>Block - inline</h2>
+    <div style="background-color: gold; display: inline;">
+        Soy un elemento en Bloque "Block"
 
-    <h2>Inline y Block</h2>
-
-    <div style="background-color: chocolate;">Soy un elemento en bloque</div>
-
-    <span style="background-color: blueviolet;">Soy una etiqueta </span>
-    <span style="background-color: blueviolet;">Soy una etiqueta Span - Inline</span>
-    <span style="background-color: blueviolet;">Soy una etiqueta Span - Inline</span>
-
-
-    <!--CANVAS -->
-
-    <section>
-        <h2>Canvas</h2>
-
-        <canvas id="miCanvas" width="300" height="150" style="border: 1px solid tomato" >
-            Tu navegador no soporta Canvas
-        </canvas>
-    </section>
-<script>
-    //Variables para obtener el id
-    var canvas = document.getElementById("miCanvas");
-
-    //Variable para el contexto
-     var ctx = canvas.getContext("2d");
-
-     //Dibujar dentro Canvas
-     ctx.fillStyle="green";
-     ctx.fillRect(20, 20, 100, 50);
-
-     //Dibujar 2 caja
-     ctx.strokeStyle = "blue";
-     ctx.strokeRect(100, 100, 100, 50);
-
-     //Escribir un texto
-     ctx.font = "16px Arial";
-     ctx.fillStyle="green";
-     ctx.fillText("Hola DUOC", 80, 120)
-
-</script>
-
+    </div>
     
+     <div style="background-color: gold; display: inline;">
+        Soy un elemento en Bloque "Block"
+
+    </div>
+     <div style="background-color: gold; display: inline;">
+       Soy un elemento en Bloque "Block"
+
+    </div>
+
+    <span style="background-color: greenyellow; display: block;">Soy un elemento en línea "inline"</span>
+    <span style="background-color: greenyellow; display: block;">Soy un elemento en línea "inline"</span>
+    <span style="background-color: greenyellow; display: block;">Soy un elemento en línea "inline"</span>
+
+    <canvas id="miCanvas" width="300" height="150" style="border-color: black; border-width: 10px, 50px; border-style: solid;" >
+    </canvas>
+
+    <script>
+
+        //Obtener el id del canvas
+        var canvas = document.getElementById("miCanvas")
+
+        //obteniendo el contexto de canvas en 2 dimensiones
+        var ctx = canvas.getContext("2d");
+
+        //Dibujar dentro de canvas rectangulo rojito
+
+        ctx.fillStyle = "red";
+        //           Eje x, eje y, Ancho, Altura
+        ctx.fillRect(20,80,100,50);
+
+        //Dibujar un rectangulo de color azul
+        ctx.strokeStyle = "blue";
+        ctx.strokeRect(0, 0, 100, 50);
+
+        //Escribir un texto
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "green";
+        ctx.fillText("Hola Canvas!!!!", 80, 120);
+
+        
+    </script>
+
+
+<div class="caja">
+
+    soy un div
+</div>
+
+
+
+
+
 </body>
 </html>

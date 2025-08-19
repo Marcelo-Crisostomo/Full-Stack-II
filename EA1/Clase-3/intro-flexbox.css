@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    padding: 20px;
+    background-color:aquamarine;
+}
+h1{
+    color: blue;
+}
+.contenedor-flex{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 50vh;
+    background-color: azure;
+
+}
+.tarjeta{
+    background-color: coral;
+    padding: 30px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+}

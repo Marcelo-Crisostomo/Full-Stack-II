@@ -1,0 +1,31 @@
+/*Selector de etiqueta*/
+h1{
+    text-align: center;
+}
+/*Selector de clase . */
+.parrafo{
+    text-align: justify;
+    
+}
+
+/*Selector de ID*/
+#h2-selector{
+    color: brown;
+    padding: 30px;
+    margin: 50px;
+}
+
+/*Propiedades más comunes*/
+
+.parrafo{
+    font-size: 20px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    
+  
+}
+
+
+
+
+
+

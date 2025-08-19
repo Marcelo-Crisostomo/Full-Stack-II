@@ -1,0 +1,70 @@
+:root{
+    --subtitulo: #f04400;
+
+}
+
+.subtitulo{
+    color: var(--subtitulo);
+}
+#titulo{
+    color: green;/*1,0,0*/
+}
+h3{
+    color: blue;/*0,0,1*/
+}
+.destacado{
+    color: red ;/*0,1,0*/
+}
+.destacado{
+    color: red !important;/*Thanos poder absoluto*/
+}
+/*Z-INDEX
+.caja1{
+background-color: blueviolet;
+padding: 80px 100px;
+border-radius: 10px;
+margin: 5px;
+position: absolute;
+z-index: 100;
+
+}
+.caja2{
+    background-color: chartreuse;
+    padding: 50px 120px;
+    border-radius: 10px;
+    margin: 5px;
+    position: absolute;
+    z-index: 200;
+}
+*/
+.borde-ejemplo{
+    border: 3px dashed blue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 56px -5px rgba(0,0,0,0.9);
+}
+
+
+.boton{
+    margin-top: 20px;
+    background-color:blueviolet;
+    color: #ffffff;
+    padding: 30px 50px;
+    transition: 0.9s;
+}
+.boton:hover{
+    background-color:blue;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 5px;
+    padding: 100px;
+}
+
+.texto{
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+
