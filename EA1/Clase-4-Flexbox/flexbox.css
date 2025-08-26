@@ -1,0 +1,76 @@
+body{
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #b9dafa;
+
+}
+h1{
+    margin-bottom: 50px;
+}
+
+/* Tarjetas */
+
+/* ctrl + } = comentario */
+.tarjeta{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.3);
+    color: #fff;
+}
+
+.contenedor-flex{
+    /* Activo flexbox */
+    display: flex; 
+    /* flex-direction: row(default), row-reverse, column, column-reverse */
+    flex-direction: row;
+    /* flex-wrap ordena los elementos, dependiendo del ancho de la pantalla */
+    flex-wrap: wrap;
+    /* Justify-content: Justificar el contenido */ 
+    justify-content: space-around;
+    /*ordeno los items en el eje vertical -
+    cross axis */
+    align-items: baseline;
+    gap: 10px;
+    height: 90vh;
+    border: 4px dashed tomato;
+    background-color: #fff;
+
+
+    /* Tamaño base de cada item ántes de crecer o encogerse.*/
+    flex-basis: 120px;
+
+}
+.especial{
+    background-color: chocolate;
+}
+.tarjeta1{
+    order: 8;
+
+}
+.tarjeta2{
+    order: 7;
+}
+.tarjeta3{
+    order: 4;
+}
+.tarjeta4{
+    order: 2;
+}
+.tarjeta5{
+
+    order: 1;
+}
+.tarjeta6{
+    order: 7;
+}
+.tarjeta7{
+    order: 3;
+}
+.tarjeta8{
+    order: 5;
+}

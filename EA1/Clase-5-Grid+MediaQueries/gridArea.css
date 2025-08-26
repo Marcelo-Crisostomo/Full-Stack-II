@@ -1,0 +1,67 @@
+/* Reset general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Contenedor */
+.layout{
+    display: grid;
+
+    /* Definir una grilla con nombres */
+    grid-template-areas: 
+    "encabezado encabezado"
+    "menu contenido"
+    "pie pie";
+
+    /* Definir columnas 
+    
+    primera columna de 200px
+    segunda columna : flexible ocupe todo el espacio disponible 1fr
+    */
+    grid-template-columns: 200px 1fr;
+
+    /* Definir filas 
+    -fila : Auto /alto del encabezado
+    -fila 2: 1fr (el espacio disponible)
+    - fila : footer que sea auto
+    */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: sans-serif;
+
+    /* áreas especificas asignadas */
+    .encabezado{
+        grid-area: encabezado;
+        background-color: darksalmon;
+        color: #fff;
+        padding: 80px 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .menu{
+        grid-area: menu;
+        background-color: darkslateblue;
+        color: white;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .contenido{
+        grid-area: contenido;
+        background-color: blueviolet;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .pie{
+        grid-area: pie;
+        background-color: black;
+        color: gray;
+        text-align: center;
+        padding: 20px;
+    }
+
+    
+
+}
