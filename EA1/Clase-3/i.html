@@ -1,0 +1,153 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase Bootstrap Completa</title>
+
+  <!-- ✅ Importamos Bootstrap 5 desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Íconos opcionales de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔵 Barra de navegación responsiva -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MiSitio</a> <!-- Logo o título -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span> <!-- Ícono hamburguesa -->
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto"> <!-- Alineado a la derecha -->
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🧱 Contenedor principal -->
+  <div class="container my-5">
+
+    <!-- ✅ Encabezado principal -->
+    <div class="text-center mb-5">
+      <h1 class="text-primary">Bienvenido a Bootstrap 5</h1>
+      <p class="lead">Este es un ejemplo completo con todos los componentes más usados</p>
+      <span class="badge bg-success">Versión educativa</span> <!-- Etiqueta -->
+    </div>
+
+    <!-- 🟪 Alertas -->
+    <div class="alert alert-warning text-center" role="alert">
+      🚧 Esta sección está en construcción. ¡Gracias por tu paciencia!
+    </div>
+
+    <!-- 🔳 Grid con 3 columnas -->
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 1</h5>
+            <p class="card-text">Descripción breve del proyecto 1.</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 2</h5>
+            <p class="card-text">Descripción breve del proyecto 2.</p>
+            <a href="#" class="btn btn-outline-success">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 3</h5>
+            <p class="card-text">Descripción breve del proyecto 3.</p>
+            <a href="#" class="btn btn-outline-danger">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📋 Tabla responsiva -->
+    <h2 class="mt-5">Ranking de Jugadores</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Jugador</th>
+            <th>Puntaje</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mario</td>
+            <td>4500</td>
+            <td><span class="badge bg-success">Activo</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Luigi</td>
+            <td>3900</td>
+            <td><span class="badge bg-warning text-dark">En pausa</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Peach</td>
+            <td>3700</td>
+            <td><span class="badge bg-danger">Eliminado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 📝 Formulario -->
+    <h2 class="mt-5">Formulario de Contacto</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="col-md-6">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+
+  </div> <!-- 🔚 Fin container -->
+
+  <!-- 🔻 Pie de página -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2025 Marcelo Crisóstomo - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- 🧠 Scripts JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
